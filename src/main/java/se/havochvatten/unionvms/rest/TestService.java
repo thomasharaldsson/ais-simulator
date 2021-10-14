@@ -9,8 +9,11 @@ import javax.ws.rs.core.MediaType;
 public class TestService {
 
     @GET
+    @Path("/hello")
     @Produces(MediaType.TEXT_PLAIN)
     public String getTestService() {
         return "Hello World! This is coming from webservice!!";
     }
+
+
 }
